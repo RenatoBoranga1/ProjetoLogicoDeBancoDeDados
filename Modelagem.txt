@@ -1,0 +1,41 @@
+Modelagem Lógica
+
+
+Definições de chave primária e estrangeira:
+
+Clientes: ClienteID (PK)
+
+Pedidos: PedidoID (PK), ClienteID (FK)
+
+Produtos: ProdutoID (PK)
+
+Fornecedores: FornecedorID (PK)
+
+Vendedores: VendedorID (PK)
+
+Estoques: EstoqueID (PK), ProdutoID (FK), FornecedorID (FK)
+
+Pagamentos: PagamentoID (PK), PedidoID (FK)
+
+Entregas: EntregaID (PK), PedidoID (FK)
+
+
+
+Constraints:
+
+
+ClienteID deve ser único para identificar cada cliente.
+
+PedidoID deve ser único para identificar cada pedido.
+
+ProdutoID deve ser único para identificar cada produto.
+
+FornecedorID deve ser único para identificar cada fornecedor.
+
+VendedorID deve ser único para identificar cada vendedor.
+
+EstoqueID deve ser único para identificar cada estoque.
+
+PagamentoID deve ser único para identificar cada pagamento.
+
+EntregaID deve ser único para identificar cada entrega.
